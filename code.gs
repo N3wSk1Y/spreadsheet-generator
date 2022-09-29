@@ -14,8 +14,8 @@ function applyRequest(json) {
   for (var i = 0; i < namedRanges.length; i++) {
     namedRangesList.push(namedRanges[i].getName());
   }
-  for(e in json) {
-    if(namedRangesList.includes(e)){
+  for (e in json) {
+    if (namedRangesList.includes(e)) {
       setFromRange(e, json[e]);
     }
   }
